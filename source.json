@@ -1,0 +1,9 @@
+{
+  "name": "Sherlock-Holmos IPA 源",
+  "identifier": "com.sherlockholmos.ipastore.source",
+  "website": "https://github.com/Sherlock-Holmos/ipa-store",
+  "subtitle": "个人 IPA 源",
+  "description": "由 GitHub Releases 自动维护的 Sherlock-Holmos 个人 IPA 源。",
+  "tintColor": "#635BFF",
+  "apps": []
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sherlock-Holmos IPA 源</title>
+    <style>
+      :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      body { max-width: 720px; margin: 0 auto; padding: 12vh 24px; line-height: 1.6; background: #f6f7fb; color: #20212a; }
+      main { padding: 32px; border-radius: 24px; background: rgba(255,255,255,.86); box-shadow: 0 12px 48px rgba(40,45,90,.12); }
+      code { padding: 3px 6px; border-radius: 6px; background: #eceefa; overflow-wrap: anywhere; }
+      a { color: #4c43c7; }
+      @media (prefers-color-scheme: dark) { body { background: #171820; color: #f5f5fa; } main { background: #242632; } code { background: #36394a; } a { color: #aaa4ff; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Sherlock-Holmos IPA 源</h1>
+      <p>这是一个兼容 LiveContainer / AltStore / SideStore 的 AltSource。</p>
+      <p>源地址：<code id="source-url">source.json</code></p>
+      <p>在 LiveContainer 的 Sources 页面添加上面的地址即可。IPA 会在 GitHub Release 发布后自动出现在这里。</p>
+    </main>
+    <script>
+      document.getElementById("source-url").textContent = new URL("source.json", window.location.href).href;
+    </script>
+  </body>
+</html>
